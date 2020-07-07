@@ -1,0 +1,53 @@
+{
+  "name": "",
+  "version": "1.0.0",
+  "private": false,
+  "description": "",
+  "main": "/dist/build.js",
+  "scripts": {
+    "build": "set NODE_ENV=production&& webpack --config ./build/webpack.prod.config.js",
+    "dev": "set NODE_ENV=development&& cross-env NODE_ENV=development webpack-dev-server --open --hot --config ./build/webpack.dev.config.js",
+    "analyz": "set NODE_ENV=production&& webpack --config ./build/webpack.prod.config.js"
+  },
+  "keywords": [],
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@babel/polyfill": "^7.2.5",
+    "@babel/runtime": "^7.3.4",
+    "element-ui": "^2.13.2",
+    "file-saver": "^2.0.2",
+    "postcss-comment": "^2.0.0",
+    "postcss-pxtorem": "^4.0.1",
+    "vue": "^2.5.2",
+    "vue-class-component": "^6.0.0",
+    "vue-property-decorator": "^6.0.0",
+    "xlsx": "^0.16.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.3.3",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/plugin-transform-runtime": "^7.2.0",
+    "@babel/preset-env": "^7.3.1",
+    "babel-loader": "^8.0.5",
+    "cross-env": "^5.2.0",
+    "css-loader": "^0.28.1",
+    "file-loader": "^2.0.0",
+    "less": "^3.9.0",
+    "less-loader": "^4.1.0",
+    "postcss-loader": "^3.0.0",
+    "pug": "^2.0.3",
+    "pug-loader": "^2.4.0",
+    "pug-plain-loader": "^1.0.0",
+    "script-loader": "^0.7.2",
+    "style-loader": "^0.23.0",
+    "ts-loader": "^4.0.0",
+    "typescript": "^2.9.2",
+    "vue-loader": "^15.4.2",
+    "vue-template-compiler": "^2.5.2",
+    "webpack": "^4.2.0",
+    "webpack-bundle-analyzer": "^3.0.2",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.8",
+    "webpack-merge": "^4.2.1"
+  }
+}
